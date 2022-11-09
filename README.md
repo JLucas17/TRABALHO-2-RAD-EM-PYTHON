@@ -1,9 +1,9 @@
-1.# TRABALHO 2 RAD EM PYTHON
-2.Membros: 
-3.Lucas Pereira dos Santos - 202002552051
-4.Vitor dos Santos Barbosa Portela -202002121025
-5.Gustavo Henrique de Matos Barros – 202108660833
-6.João Lucas Brito Moura - 202003270695
+# TRABALHO 2 RAD EM PYTHON
+Membros: 
+Lucas Pereira dos Santos - 202002552051
+Vitor dos Santos Barbosa Portela -202002121025
+Gustavo Henrique de Matos Barros – 202108660833
+João Lucas Brito Moura - 202003270695
 
 
 ![image](https://user-images.githubusercontent.com/112867758/200859977-ad0d2651-2489-4108-a09f-d73b62083056.png)
