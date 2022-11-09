@@ -161,3 +161,19 @@ def criarArquivo():
 
             tk.Button(janelainserir, text="Voltar", command=janelainserir.destroy).grid(row=11, column=0)
             tk.Button(janelainserir, text="Confirmar", command=lambda: [btnSdados(), aprentarDados()]).grid(row=11, column=1)
+    # Criando Janela Criar
+        janelacriar = tk.Toplevel()
+        janelacriar.title("Criar Arquivo")
+        janelacriar.geometry('300x270+800+300')
+        janelacriar.minsize(300, 270)
+        janelacriar.maxsize(300, 270)
+
+        tk.Label(janelacriar, text="  ").grid(row=0, column=0)
+        tk.Label(janelacriar,text="Informe o nome do arquivo a ser Criado \n[Obs.: Insira o formato do arquivo ex.: .txt no final]:").grid(row=0, column=1)
+        tk.Label(janelacriar).grid(row=1, column=1)
+        NomeArquivo = tk.Entry(janelacriar, width=30)
+        NomeArquivo.grid(row=2, column= 1)
+        tk.Label(janelacriar).grid(row=3, column=1)
+        tk.Button(janelacriar, text="Criar Arquivo", command=lambda:[btnStitulo(), inserindoDados()]).grid(row=4, column=1)
+        tk.Label(janelacriar).grid(row=5, column=1)
+        tk.Button(janelacriar, text="Voltar o menu", command=janelacriar.destroy).grid(row=6, column=1)
