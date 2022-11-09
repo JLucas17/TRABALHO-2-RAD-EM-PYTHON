@@ -136,3 +136,28 @@ def criarArquivo():
             tk.Label(janelainserir, text="Informe a Conta....:").grid(row=5, column=0)
             conta_bd = tk.Entry(janelainserir, width=18)
             conta_bd.grid(row=5, column=1)
+
+
+            # Parte da Conta
+            tk.Label(janelainserir, text="Informe a Agência..:").grid(row=6, column=0)
+            agencia_bd = tk.Entry(janelainserir, width=18)
+            agencia_bd.grid(row=6, column=1)
+
+            tk.Label(janelainserir, text="Informe o Número...:").grid(row=7, column=0)
+            numero_bd = tk.Entry(janelainserir, width=18)
+            numero_bd.grid(row=7, column=1)
+
+            tk.Label(janelainserir, text="Informe o Saldo....:").grid(row=8, column=0)
+            saldo_bd = tk.Entry(janelainserir, width=18)
+            saldo_bd.grid(row=8, column=1)
+
+            tk.Label(janelainserir, text="Informe o Gerente..:").grid(row=9, column=0)
+            gerente_bd = tk.Entry(janelainserir, width=18)
+            gerente_bd.grid(row=9, column=1)
+
+            tk.Label(janelainserir, text="Informe o Titular..:").grid(row=10, column=0)
+            titular_bd = tk.Entry(janelainserir, width=18)
+            titular_bd.grid(row=10, column=1)
+
+            tk.Button(janelainserir, text="Voltar", command=janelainserir.destroy).grid(row=11, column=0)
+            tk.Button(janelainserir, text="Confirmar", command=lambda: [btnSdados(), aprentarDados()]).grid(row=11, column=1)
