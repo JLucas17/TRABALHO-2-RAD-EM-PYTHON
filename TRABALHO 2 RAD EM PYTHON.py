@@ -81,3 +81,29 @@ def criarArquivo():
 
             tk.Button(janelaapresentar, text="Voltar o menu", command=lambda:[janelaapresentar.destroy(),janelacriar.destroy(),janelainserir.destroy()]).grid(row=13, column=1)
 
+
+        def btnSdados(): # Função salvar dados no arquivo txt criado
+                    print(f"{cpf_bd.get()}\n{nome_bd.get()}\n{sobrenome_bd.get()}\n{idade_bd.get()}\n{conta_bd.get()}\n{agencia_bd.get()}\n{numero_bd.get()}\n{saldo_bd.get()}\n{gerente_bd.get()}\n{titular_bd.get()}")
+                    Arquivo = NomeArquivo.get()
+                    CPF = cpf_bd.get()
+                    NOME = nome_bd.get()
+                    SOBRENOME = sobrenome_bd.get()
+                    IDADE = idade_bd.get()
+                    CONTA = conta_bd.get()
+                    AGENCIA = agencia_bd.get()
+                    NUMERO = numero_bd.get()
+                    SALDO = saldo_bd.get()
+                    GERENTE = gerente_bd.get()
+                    TITULAR = titular_bd.get()
+                    with open(Arquivo, 'w', encoding="utf-8") as Salvar:
+                        Salvar.write("|CPF: "+ CPF + "\n")
+                        Salvar.write("|Nome: " + NOME + "\n")
+                        Salvar.write("|Sobrenome: " + SOBRENOME + "\n")
+                        Salvar.write("|Idade: " + IDADE + "\n")
+                        Salvar.write("|Conta: " + CONTA + "\n")
+                        Salvar.write("|Agencia: " + AGENCIA + "\n")
+                        Salvar.write("|Numero: " + NUMERO + "\n")
+                        Salvar.write("|Saldo: " + SALDO + "\n")
+                        Salvar.write("|Gerente: " + GERENTE + "\n")
+                        Salvar.write("|Titular: " + TITULAR + "\n")
+
