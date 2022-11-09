@@ -107,3 +107,32 @@ def criarArquivo():
                         Salvar.write("|Gerente: " + GERENTE + "\n")
                         Salvar.write("|Titular: " + TITULAR + "\n")
 
+             # Criando Janela Inserir
+            janelainserir = tk.Toplevel()
+            janelainserir.title("Inserindo os Dados")
+            janelainserir.geometry('300x270+800+300')
+            janelainserir.minsize(300, 270)
+            janelainserir.maxsize(300, 270)
+
+
+            tk.Label(janelainserir, text="--Insira as suas Informações --").grid(row=0, column=0)
+            # Parte da Pessoa
+            tk.Label(janelainserir, text="Informe o CPF......:").grid(row=1, column=0)
+            cpf_bd = tk.Entry(janelainserir, width=18)
+            cpf_bd.grid(row=1, column=1)
+
+            tk.Label(janelainserir, text="Informe o Nome.....:").grid(row=2, column=0)
+            nome_bd = tk.Entry(janelainserir, width=18)
+            nome_bd.grid(row=2, column=1)
+
+            tk.Label(janelainserir, text="Informe o Sobrenome:").grid(row=3, column=0)
+            sobrenome_bd = tk.Entry(janelainserir, width=18)
+            sobrenome_bd.grid(row=3, column=1)
+
+            tk.Label(janelainserir, text="Informe a Idade....:").grid(row=4, column=0)
+            idade_bd = tk.Entry(janelainserir, width=18)
+            idade_bd.grid(row=4, column=1)
+
+            tk.Label(janelainserir, text="Informe a Conta....:").grid(row=5, column=0)
+            conta_bd = tk.Entry(janelainserir, width=18)
+            conta_bd.grid(row=5, column=1)
