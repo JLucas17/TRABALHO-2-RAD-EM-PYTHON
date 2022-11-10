@@ -177,3 +177,27 @@ def criarArquivo():
         tk.Button(janelacriar, text="Criar Arquivo", command=lambda:[btnStitulo(), inserindoDados()]).grid(row=4, column=1)
         tk.Label(janelacriar).grid(row=5, column=1)
         tk.Button(janelacriar, text="Voltar o menu", command=janelacriar.destroy).grid(row=6, column=1)
+def abrirArquivo(): # Função Abrir Arquivo
+    def apresentarDados(): # Função Apresentar Dados
+        # Criando Janela Apresentar
+        janelaapresentar = tk.Toplevel()
+        janelaapresentar.title("Dados Salvos")
+        janelaapresentar.geometry('300x270+800+300')
+        janelaapresentar.minsize(300, 270)
+        janelaapresentar.maxsize(300, 270)
+
+        # Abrindo Arquivo
+        Arquivo = NomeArquivo.get()
+        with open(Arquivo, 'r+', encoding="utf-8") as Ler:
+            Linha = Ler.readlines()
+            print(Linha[0])
+            print(Linha[1])
+            print(Linha[2])
+            print(Linha[3])
+            print(Linha[4])
+            print(Linha[5])
+            print(Linha[6])
+            print(Linha[7])
+            print(Linha[8])
+            print(Linha[9])
+      
