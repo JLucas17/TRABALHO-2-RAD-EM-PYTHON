@@ -19,12 +19,12 @@ Editar Arquivo, Deletar Arquivo e Sair.
 
 Ao selecionar o botão “Criar Arquivo”, esta outra janela será criada.
 
-![image](https://user-images.githubusercontent.com/112867758/200860443-26c46677-4e22-40f2-9619-79c86b883a73.png)
+![image](https://user-images.githubusercontent.com/112867758/201114258-6cb2ed64-3ee2-4266-97d1-a61ca83a5456.png)
 
 Após a identificação dada ao arquivo de texto, essa janela irá aparecer e solicitar as informações do 
 usuário e assim que concluída confirme para salvar na memória.
 
-![image](https://user-images.githubusercontent.com/112867758/200860775-174622af-be1d-4b3a-861b-c568d9728ad5.png)
+![image](https://user-images.githubusercontent.com/112867758/201114175-4f51918e-2f70-4f86-99e8-f81dc25dd7f3.png)
 
 Com seus dados salvos após clicar no botão “Confirmar” essa tela será exibida para apresentar as 
 informações salvas.
@@ -38,7 +38,7 @@ Ao selecionar o botão “Abrir aquivo” outra janela irá aparecer.
 Ao clicar no botão “Abrir” o usuário terá essa janela exibida, que irá solicitar o nome do arquivo a ser 
 aberto pelo programa.
 
-![image](https://user-images.githubusercontent.com/112867758/200861192-4154adf2-99f6-4afc-a4cc-4fe199592043.png)
+![image](https://user-images.githubusercontent.com/112867758/201114034-3cd113c6-b6f0-4c08-9e67-626aeb552f63.png)
 
 Após inserir o nome do arquivo de texto, essa tela exibirá os dados do mesmo.
 
@@ -51,12 +51,12 @@ edição do arquivo de texto
 
 Ao aparecer essa tela, o usuário deverá inserir o nome do arquivo a ser editado
 
-![image](https://user-images.githubusercontent.com/112867758/200862226-e64b7546-688b-43d0-8a99-fb6f3dd1baf3.png)
+![image](https://user-images.githubusercontent.com/112867758/201113903-77d691b0-55ff-4920-9463-8bb050870c59.png)
 
 Suas informações serão reapresentadas para edição, quando concluído clique em “Confirmar” e as 
 alterações salvarão na memória.
 
-![image](https://user-images.githubusercontent.com/112867758/200862328-4a05ba54-87d6-4a61-8bf3-580d27b5d462.png)
+![image](https://user-images.githubusercontent.com/112867758/201113688-0117b0d5-1b6b-40e7-9fc6-ea2a66892867.png)
 
 Assim que a edição for concluída essa janela irá exibir novamente o arquivo de texto, dessa vez com 
 toda as alterações feitas.
