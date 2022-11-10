@@ -1,6 +1,10 @@
 import tkinter as tk
 import os
 import tkinter.messagebox
+# import Trabalhorad
+
+pastaApp=os.path.dirname(__file__)
+nomeBanco=pastaApp+"\\trabalhorad.db"
 
 # Criando Janela Menu
 
