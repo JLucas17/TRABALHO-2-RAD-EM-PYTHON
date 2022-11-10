@@ -246,3 +246,19 @@ def abrirArquivo(): # Função Abrir Arquivo
         M["text"] = Linha[9].rstrip("\n")
 
         tk.Button(janelaapresentar, text="Voltar o menu",command=lambda: [janelaabrir.destroy(), janelaapresentar.destroy()]).grid(row=13, column=1)
+# Criando Janela Abrir
+    janelaabrir = tk.Toplevel()
+    janelaabrir.title("Abrir Arquivo")
+    janelaabrir.geometry('300x270+800+300')
+    janelaabrir.minsize(300, 270)
+    janelaabrir.maxsize(300, 270)
+
+    tk.Label(janelaabrir, text="  ").grid(row=0, column=0)
+    tk.Label(janelaabrir,text="Informe o nome do arquivo a ser Aberto \n[Obs.: Insira o formato do arquivo ex.: .txt no final]:").grid(row=0, column=1)
+    tk.Label(janelaabrir).grid(row=1, column=1)
+    NomeArquivo = tk.Entry(janelaabrir, width=30)
+    NomeArquivo.grid(row=2, column=1)
+    tk.Label(janelaabrir).grid(row=3, column=1)
+    tk.Button(janelaabrir, text="Abrir", command=lambda:[apresentarDados()]).grid(row=4, column=1)
+    tk.Label(janelaabrir).grid(row=5, column=1)
+    tk.Button(janelaabrir, text="Voltar o menu", command=janelaabrir.destroy).grid(row=6, column=1)
