@@ -3,6 +3,7 @@ import os
 import tkinter.messagebox
 
 # Criando Janela Menu
+
 janelamenu = tk.Tk()
 janelamenu.title("Menu")
 janelamenu.geometry('300x350+800+300')
@@ -44,6 +45,7 @@ def criarArquivo():
                 print(Linha[13])
 
             # Parte para Apresentação ao usuário
+            
             A = tk.Label(janelaapresentar, text="Os dados foram salvos como:")
             A.grid(row=0, column=0)
             B = tk.Label(janelaapresentar, text="-------------")
@@ -132,6 +134,7 @@ def criarArquivo():
                 Salvar.write("|Endereco: " + ENDERECO + "\n")
 
         # Criando Janela Inserir
+        
         janelainserir = tk.Toplevel()
         janelainserir.title("Inserindo os Dados")
         janelainserir.geometry('300x350+800+300')
@@ -139,7 +142,9 @@ def criarArquivo():
         janelainserir.minsize(300, 350)
 
         tk.Label(janelainserir, text="--Insira as suas Informações --").grid(row=0, column=0)
+        
         # Parte da Pessoa
+        
         tk.Label(janelainserir, text="Informe o CPF......:").grid(row=1, column=0)
         cpf_bd = tk.Entry(janelainserir, width=18)
         cpf_bd.grid(row=1, column=1)
@@ -161,6 +166,7 @@ def criarArquivo():
         conta_bd.grid(row=5, column=1)
 
         # Parte da Conta
+        
         tk.Label(janelainserir, text="Informe a Agência..:").grid(row=6, column=0)
         agencia_bd = tk.Entry(janelainserir, width=18)
         agencia_bd.grid(row=6, column=1)
@@ -201,6 +207,7 @@ def criarArquivo():
         tk.Button(janelainserir, text="Confirmar", command=lambda: [btnSdados(), apresentarDados()]).grid(row=15,column=1)
 
     # Criando Janela Criar
+    
     janelacriar = tk.Toplevel()
     janelacriar.title("Criar Arquivo")
     janelacriar.geometry('300x350+800+300')
@@ -247,6 +254,7 @@ def abrirArquivo():  # Função Abrir Arquivo
             print(Linha[13])
 
         # Parte para Apresentação ao usuário
+        
         A = tk.Label(janelaapresentar, text="Os dados foram salvos como:")
         A.grid(row=0, column=0)
         B = tk.Label(janelaapresentar, text="-------------")
@@ -333,6 +341,7 @@ def editarArquivo():  # Função Editar Arquivo
             janelaapresentar.minsize(300, 350)
 
             # Abrindo Arquivo
+            
             Arquivo = NomeArquivo.get()
             with open(Arquivo, 'r+', encoding="utf-8") as Ler:
                 Linha = Ler.readlines()
@@ -352,6 +361,7 @@ def editarArquivo():  # Função Editar Arquivo
                 print(Linha[13])
 
             # Parte para Apresentação ao usuário
+            
             A = tk.Label(janelaapresentar, text="Os dados foram salvos como:")
             A.grid(row=0, column=0)
             B = tk.Label(janelaapresentar, text="-------------")
@@ -440,6 +450,7 @@ def editarArquivo():  # Função Editar Arquivo
                 Salvar.write("|Endereco: " + ENDERECO + "\n")
 
         # Criando a Janela Inserir
+        
         janelainserir = tk.Toplevel()
         janelainserir.title("Inserindo os Dados")
         janelainserir.geometry('300x350+800+300')
@@ -509,6 +520,7 @@ def editarArquivo():  # Função Editar Arquivo
         tk.Button(janelainserir, text="Confirmar", command=lambda: [btnSdados(), apresentarDados()]).grid(row=15,column=1)
 
     # Criando a Janela Editar
+    
     janelaeditar = tk.Toplevel()
     janelaeditar.title("Editar Arquivo")
     janelaeditar.geometry('300x350+800+300')
@@ -533,6 +545,7 @@ def deletarArquivo():  # Função Deletar Arquivo
 
 
     # Criar janela Deletar
+    
     janeladeletar = tk.Toplevel()
     janeladeletar.title("Deletar Arquivo")
     janeladeletar.geometry('300x350+800+300')
