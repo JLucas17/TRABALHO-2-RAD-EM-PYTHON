@@ -107,10 +107,9 @@ create_table(connection, table_Pessoa_query)
 create_table(connection, table_Conta_query)
 create_table(connection, table_Banco_query)
 
-
 connection = create_connection("postgres", "postgres", "122436","localhost", "5432")
 
-def dql (query): # Função Select
+def dql (query): # select
     vcon=ConexaoBanco()
     c=vcon.cursor()
     c.execute(query)
@@ -120,7 +119,7 @@ def dql (query): # Função Select
     vcon.close()
     return res
     
-def dql (query): # Função Insert
+def dql (query): # insert
     vcon=ConexaoBanco()
     c=vcon.cursor()
     c.execute(query)
@@ -130,7 +129,7 @@ def dql (query): # Função Insert
     vcon.close()
     return res
 
-def dql (query): # Função Update
+def dql (query): # update
     vcon=ConexaoBanco()
     c=vcon.cursor()
     c.execute(query)
@@ -140,7 +139,7 @@ def dql (query): # Função Update
     vcon.close()
     return res
 
-def dql (query): # Função Delete
+def dql (query): # delete
     vcon=ConexaoBanco()
     c=vcon.cursor()
     c.execute(query)
