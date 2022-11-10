@@ -429,3 +429,21 @@ def abrirArquivo(): # Função Abrir Arquivo
     tk.Label(janelaeditar).grid(row=5, column=1)
     tk.Button(janelaeditar, text="Voltar o menu", command=janelaeditar.destroy).grid(row=6, column=1)
 
+
+#msg = tk.Message(janelamenu, text="Seja Bem Vindo!")
+tk.Label(janelamenu, text="              ").grid(row=0, column=1)
+tk.Label(janelamenu, text="Por favor escolha o que quer fazer!").grid(row=0,column=3)
+tk.Label(janelamenu).grid(row=1, column=3)
+tk.Button(janelamenu, text="Criar Arquivo", command=criarArquivo).grid(row=2,column=3)
+tk.Label(janelamenu).grid(row=3, column=3)
+tk.Button(janelamenu, text="Abrir Arquivo", command=abrirArquivo).grid(row=4, column=3)
+tk.Label(janelamenu).grid(row=5, column=3)
+tk.Button(janelamenu, text="Editar Arquivo", command=editarArquivo).grid(row=6,column=3)
+tk.Label(janelamenu).grid(row=7, column=3)
+tk.Button(janelamenu, text="Deletar Arquivo", command=deletarArquivo).grid(row=8,column=3)
+tk.Label(janelamenu).grid(row=9, column=3)
+tk.Button(janelamenu, text="Sair", command=janelamenu.quit).grid(row=10, column=3)
+tk.Label(janelamenu).grid(row=11, column=3)
+
+
+janelamenu.mainloop()
