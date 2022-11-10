@@ -1,4 +1,4 @@
-mport psycopg2
+import psycopg2
 from psycopg2 import OperationalError
 import tkinter as tk
 import os
