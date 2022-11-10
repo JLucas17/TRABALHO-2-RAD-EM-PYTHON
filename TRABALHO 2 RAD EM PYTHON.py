@@ -412,3 +412,20 @@ def abrirArquivo(): # Função Abrir Arquivo
 
         tk.Button(janelainserir, text="Voltar", command=janelainserir.destroy).grid(row=11, column=0)
         tk.Button(janelainserir, text="Confirmar", command=lambda:[btnSdados(), apresentarDados()]).grid(row=11, column=1)
+        # Criando a Janela Editar
+    janelaeditar = tk.Toplevel()
+    janelaeditar.title("Editar Arquivo")
+    janelaeditar.geometry('300x270+800+300')
+    janelaeditar.minsize(300, 270)
+    janelaeditar.maxsize(300, 270)
+
+    tk.Label(janelaeditar, text="  ").grid(row=0, column=0)
+    tk.Label(janelaeditar,text="Informe o nome do arquivo a ser Editado \n[Obs.: Insira o formato do arquivo ex.: .txt no final]:").grid(row=0, column=1)
+    tk.Label(janelaeditar).grid(row=1, column=1)
+    NomeArquivo = tk.Entry(janelaeditar, width=30)
+    NomeArquivo.grid(row=2, column=1)
+    tk.Label(janelaeditar).grid(row=3, column=1)
+    tk.Button(janelaeditar, text="Editar", command=lambda: [btnStitulo(), inserindoDados()]).grid(row=4, column=1)
+    tk.Label(janelaeditar).grid(row=5, column=1)
+    tk.Button(janelaeditar, text="Voltar o menu", command=janelaeditar.destroy).grid(row=6, column=1)
+
