@@ -262,3 +262,30 @@ def abrirArquivo(): # Função Abrir Arquivo
     tk.Button(janelaabrir, text="Abrir", command=lambda:[apresentarDados()]).grid(row=4, column=1)
     tk.Label(janelaabrir).grid(row=5, column=1)
     tk.Button(janelaabrir, text="Voltar o menu", command=janelaabrir.destroy).grid(row=6, column=1)
+    def editarArquivo(): # Função Editar Arquivo
+    def btnStitulo(): # Função Editar Arquivo
+        print(NomeArquivo.get())
+        open(str(NomeArquivo.get()),"w")
+
+    def inserindoDados(): # Função Inserir Dados
+        def apresentarDados(): # Função Apresentar Dados
+            janelaapresentar = tk.Toplevel()
+            janelaapresentar.title("Dados Salvos")
+            janelaapresentar.geometry('300x270+800+300')
+            janelaapresentar.minsize(300, 270)
+            janelaapresentar.maxsize(300, 270)
+
+            # Abrindo Arquivo
+            Arquivo = NomeArquivo.get()
+            with open(Arquivo, 'r+', encoding="utf-8") as Ler:
+                Linha = Ler.readlines()
+                print(Linha[0])
+                print(Linha[1])
+                print(Linha[2])
+                print(Linha[3])
+                print(Linha[4])
+                print(Linha[5])
+                print(Linha[6])
+                print(Linha[7])
+                print(Linha[8])
+                print(Linha[9])
