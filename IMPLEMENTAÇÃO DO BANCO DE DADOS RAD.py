@@ -107,7 +107,6 @@ create_table(connection, table_Pessoa_query)
 create_table(connection, table_Conta_query)
 create_table(connection, table_Banco_query)
 
-
 connection = create_connection("postgres", "postgres", "122436","localhost", "5432")
 
 def dql (query): # Função Select
