@@ -2,6 +2,7 @@ from typing import final
 import psycopg2
 from psycopg2 import OperationalError
 import os
+# import FUNÇÃO_SALVAR_DADOS
 
 # Criando conexão com o banco de dados
 
